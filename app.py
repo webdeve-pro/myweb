@@ -9,8 +9,8 @@ app = Flask(__name__)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Model paths
-MODEL_PATH = os.path.join(BASE_DIR, "../models/knn_model.pkl")
-SCALER_PATH = os.path.join(BASE_DIR, "../models/scaler.pkl")
+MODEL_PATH = os.path.join(BASE_DIR, "knn_model.pkl")
+SCALER_PATH = os.path.join(BASE_DIR, "scaler.pkl")
 
 # Load model + scaler
 model = load(MODEL_PATH)
